@@ -3,7 +3,7 @@ pipelines:
     group: Playa
     materials:
       repo:
-        git: https://github.com/TW-Playa-Chile/Grillo-Pipelines
+        git: https://github.com/TW-Playa-Chile/AppPlaya
         branch: master
     stages:
       - pruebas:
