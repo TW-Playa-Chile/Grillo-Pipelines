@@ -1,0 +1,16 @@
+pipelines:
+  GrilloApp:
+    group: Playa
+    materials:
+      repo:
+        git: https://github.com/TW-Playa-Chile/Grillo-Pipelines
+        branch: master
+    stages:
+      - pruebas:
+          jobs:
+            pruebas_unitarias:
+              resources:
+                - node-agent
+              tasks:
+                  - exec:
+                      command: npm test
