@@ -13,4 +13,5 @@ pipelines:
                 - node-agent
               tasks:
                   - exec:
-                      command: npm install && npm test
+                      command: npm install
+                      command: jest --ci
