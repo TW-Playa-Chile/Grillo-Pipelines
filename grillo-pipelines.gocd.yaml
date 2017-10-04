@@ -14,4 +14,6 @@ pipelines:
                 - node-agent
               tasks: 
                 - exec: 
-                    command: npm install
+                    command: /bin/bash
+                    arguments:
+                      - -c npm install
