@@ -14,6 +14,4 @@ pipelines:
                 - node-agent
               tasks: 
                 - exec: 
-                    command: /bin/bash
-                    arguments:
-                      - -c npm install
+                    command: yarn install
