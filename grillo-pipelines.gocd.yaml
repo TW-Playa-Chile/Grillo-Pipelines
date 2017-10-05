@@ -17,6 +17,5 @@ pipelines:
                     arguments:
                       - install
                 - exec:
-                    command: npm
-                    arguments:
-                      - test       
+                    command: jest
+                        
