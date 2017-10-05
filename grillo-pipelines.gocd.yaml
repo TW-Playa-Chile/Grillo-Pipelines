@@ -6,12 +6,12 @@ pipelines:
         branch: master
         git: "https://github.com/TW-Playa-Chile/AppPlaya"
     stages: 
-      - 
-        pruebas: 
-          jobs:
+      - pruebas: 
+          jobs: 
             pruebas_unitarias: 
               resources: 
                 - node-agent
               tasks: 
-                - exec: 
-                    command: npm install && npm test
+                - 
+                  exec: 
+                    command: "npm install && npm test"
