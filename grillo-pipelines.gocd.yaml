@@ -15,4 +15,4 @@ pipelines:
                 - node-agent
               tasks: 
                 - exec: 
-                    command: npm test
+                    command: npm install && npm test
