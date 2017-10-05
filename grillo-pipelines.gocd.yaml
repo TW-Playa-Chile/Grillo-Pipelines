@@ -6,9 +6,9 @@ pipelines:
         branch: master
         git: "https://github.com/TW-Playa-Chile/AppPlaya"
     stages:
-       - test:
+       - pruebas:
           jobs:
-            unit_test:
+            pruebas_unitarias:
               resources:
                 - node-agent
               tasks:
