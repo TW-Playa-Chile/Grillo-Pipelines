@@ -14,4 +14,4 @@ pipelines:
                 - node-agent
               tasks: 
                 - exec: 
-                    command: cat App.js      
+                    command: pwd    
