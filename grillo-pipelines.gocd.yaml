@@ -14,4 +14,4 @@ pipelines:
                 - node-agent
               tasks: 
                 - exec: 
-                    command: pwd    
+                    command: ls  
