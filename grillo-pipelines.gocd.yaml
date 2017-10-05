@@ -14,7 +14,7 @@ pipelines:
                 - node-agent
               tasks: 
                 - exec: 
-                    command: cat
+                    command: ls
                      arguments:
-                      - app.json
+                      - -a
 
