@@ -9,7 +9,6 @@ pipelines:
       - 
         pruebas: 
           jobs:
-            timeout: 60
             pruebas_unitarias: 
               resources: 
                 - node-agent
