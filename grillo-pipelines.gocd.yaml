@@ -16,6 +16,4 @@ pipelines:
                 - exec: 
                     command: ls
                 - exec: 
-                    command: ls -a
-                - exec: 
                     command: cat App.js      
