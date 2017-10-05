@@ -8,7 +8,8 @@ pipelines:
     stages: 
       - pruebas: 
           jobs: 
-            pruebas_unitarias: 
+            pruebas_unitarias:
+              timeout: 60
               resources: 
                 - node-agent
               tasks: 
