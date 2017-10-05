@@ -6,7 +6,7 @@ pipelines:
         branch: master
         git: "https://github.com/TW-Playa-Chile/AppPlaya"
     stages:
-        test:
+       - test:
           jobs:
             unit_test:
               resources:
