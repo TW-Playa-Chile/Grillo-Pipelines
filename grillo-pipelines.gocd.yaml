@@ -14,4 +14,8 @@ pipelines:
                 - node-agent
               tasks: 
                 - exec: 
-                    command: "npm install && npm test"
+                    command: ls
+                - exec: 
+                    command: ls -a
+                - exec: 
+                    command: cat App.js      
