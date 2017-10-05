@@ -14,7 +14,7 @@ pipelines:
                 - node-agent
               tasks: 
                 - exec: 
-                    command: ls
+                    command: npm
                     arguments:
-                      - -a
+                      - install
 
