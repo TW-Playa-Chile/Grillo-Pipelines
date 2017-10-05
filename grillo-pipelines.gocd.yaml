@@ -16,10 +16,6 @@ pipelines:
                     command: npm
                     arguments:
                       - install
-            test:
-              resources:
-                - node-agent
-              tasks:
                 - exec:
                     command: npm
                     arguments:
