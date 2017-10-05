@@ -1,20 +1,26 @@
-pipelines: 
-  GrilloApp: 
+pipelines:
+  GrilloApp:
     group: Playa
-    materials: 
-      repo: 
+    materials:
+      repo:
         branch: master
         git: "https://github.com/TW-Playa-Chile/AppPlaya"
-    stages: 
-      - pruebas: 
-          jobs: 
-            pruebas_unitarias:
-              timeout: 60
-              resources: 
+    stages:
+        unit_test:
+          jobs:
+            build:
+              resources:
                 - node-agent
-              tasks: 
-                - exec: 
+              tasks:
+                - exec:
                     command: npm
                     arguments:
                       - install
-
+            test:
+              resources:
+                - node-agent
+              tasks:
+                - exec:
+                    command: npm
+                    arguments:
+                      - test
