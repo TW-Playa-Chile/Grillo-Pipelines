@@ -4,7 +4,7 @@ pipelines:
     materials:
       repo:
         branch: master
-        git: "https://github.com/TW-Playa-Chile/AppPlaya"
+        git: "https://github.com/TW-Playa-Chile/Grillo-App"
     stages:
        - pruebas:
           jobs:
